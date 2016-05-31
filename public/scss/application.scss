@@ -1,0 +1,92 @@
+$green: #00ab6b;
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body { height: 100%; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper, canvas {
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 36em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px 0;
+}
+
+a, img {
+  color: $green;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.non-style {
+  color: #ddd;
+}
+
+h3, p {
+  color: #333;
+  margin: 15px 0;
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+
+img {
+  border-radius: 50%;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.card {
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  h3, p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+button {
+  width: 100%;
+  display: block;
+  background-color: $green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out;z-index:9999;}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
