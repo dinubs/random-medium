@@ -19,7 +19,6 @@ class RandomMedium extends React.Component {
   }
   componentWillMount() {
     get_post('', (json) => {
-      console.log(json);
       this.setState({article: json, loading: false});
     });
   }
@@ -58,7 +57,6 @@ class RandomMedium extends React.Component {
     this.setState({date: moment(random_date).calendar(), actual_date: random_date, loading: true, link: moment(random_date).format('MMMM-DD-YYYY').toLowerCase()});
     
     get_post(moment(random_date).format('MMMM-DD-YYYY').toLowerCase(), (json) => {
-      console.log(json);
       this.setState({article: json, loading: false});
     })
   }
@@ -66,7 +64,6 @@ class RandomMedium extends React.Component {
     this.setState({date: moment(date).calendar(), actual_date: date, loading: true, link: moment(date).format('MMMM-DD-YYYY').toLowerCase()});
     
     get_post(moment(date).format('MMMM-DD-YYYY').toLowerCase(), (json) => {
-      console.log(json);
       this.setState({article: json, loading: false});
     })
   }
