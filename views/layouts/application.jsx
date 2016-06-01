@@ -18,10 +18,7 @@ class Application extends React.Component {
     return (
       <html>
         <head>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-          <link rel="stylesheet" type="text/css" href="/css/application.css" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="shortcut icon" href="http://www.bendergroup.com/assets/favicon.png" />
           <meta name="description" />
           <meta charset="UTF-8" />
           <title>Random Medium</title>
